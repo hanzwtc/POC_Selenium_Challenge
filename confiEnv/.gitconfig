@@ -1,0 +1,6 @@
+[user]
+	name = your name
+	email = your_email@bcp.com.pe
+[http]
+	sslVerify= false
+	proxy= http://USER:PASSWORD@pftwbappp04-wcg.credito.bcp.com.pe:8080

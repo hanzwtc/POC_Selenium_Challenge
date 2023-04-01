@@ -1,0 +1,31 @@
+<!DOCTYPE html><html><head><style>table {  table-layout: fixed;  border-collapse: collapse;  width: 100%;}th, td {border: 1px solid #ccc;  text-align: left;  padding: 1px;  width: 10%;}tr:nth-child(even){background-color: #f2f2f2}th {  background-color: #154068;  color: white;}.button {background-color: #1C4E80;border: none;color: white;padding: 10px 20px;text-align: center;text-decoration: none;display: inline-block;font-size: 10px;margin: 0px 0px;-webkit-transition-duration: 0.1s; transition-duration: 0.1s;cursor: pointer;}.button1:hover {background-color: #C1CCC8;color: black;}.button1 {border-radius: 15px}.modal {display: none;position: fixed;z-index: 1;padding-top: 0px;left: 0;top: 0;width: 100%;height: 100%;overflow: auto;background-color: rgb(0, 0, 0);background-color: rgba(0, 0, 0, 0.4);}.modal-content {background-color: #fefefe;margin: auto;padding: 10px;border: 0px solid #888;width: 80%;}.close {color: #aaaaaa;float: right;font-size: 28px;font-weight: bold;}.close:hover,.close:focus {color: #000;text-decoration: none;cursor: pointer;}.modal-header {display: none;}#myInput {background-position: 10px 10px;background-repeat: no-repeat;width: 10%;font-size: 16px;padding: 10px 10px 10px 35px;border: 1px solid #ddd;margin-bottom: 12px;}</style></head><meta name='viewport' content='width=device-width, initial-scale=1'><script src='C:\POC_SELENIUM\baseframework-develop@9d1e8831bb6//src//ResourceReport//JScript//xlsx.full.min.js'></script><script src='C:\POC_SELENIUM\baseframework-develop@9d1e8831bb6//src//ResourceReport//JScript//FileSaver.min.js'></script><script src='C:\POC_SELENIUM\baseframework-develop@9d1e8831bb6//src//ResourceReport//JScript//tableexport.min.js'></script><body><input type='text' id='myInput' onkeyup='myFunction()' placeholder='Buscar ...' title='Buscar ...'><button id='btnExportar' style='background-color:e7e7e7;color:black;width:150px;height:40px;'>Exportar</button><table align='center' id='tabla'><tr><th>Nro Caso</th><th>Method</th><th>Data</th><th>StatusCode</th><th>Pass/Fail</th><th>Evidencia</th></tr><tr><td>1</td><td>GET</td><td>US?ACCESS_KEY=1175FEA6BA50AD8EAC7A31857B37DEAA</td><td>200</td><td align='center' style='color:green;'>PASS</td><td><button align='center' onclick="document.getElementById('id1').style.display='block'" class=" button button1">Ver</button><div id="id1" class="modal" style="display: none;"><div class="modal-content"><span onclick="document.getElementById('id1').style.display='none'" class="close">&times;</span><div><embed src="file:C:\POC_SELENIUM\baseframework-develop@9d1e8831bb6//src//test-output//Results//EvidenciaPDF//31032023_073250637.pdf#zoom=125" frameborder="0" width="100%" height="900px" internalinstanceid="10"></div></div></div></td></tr><tr><td>2</td><td>GET</td><td>DE?ACCESS_KEY=1175FEA6BA50AD8EAC7A31857B37DEAA</td><td>200</td><td align='center' style='color:green;'>PASS</td><td><button align='center' onclick="document.getElementById('id2').style.display='block'" class=" button button1">Ver</button><div id="id2" class="modal" style="display: none;"><div class="modal-content"><span onclick="document.getElementById('id2').style.display='none'" class="close">&times;</span><div><embed src="file:C:\POC_SELENIUM\baseframework-develop@9d1e8831bb6//src//test-output//Results//EvidenciaPDF//31032023_073252175.pdf#zoom=125" frameborder="0" width="100%" height="900px" internalinstanceid="10"></div></div></div></td></tr><tr><td>3</td><td>GET</td><td>GB?ACCESS_KEY=1175FEA6BA50AD8EAC7A31857B37DEAA</td><td>200</td><td align='center' style='color:green;'>PASS</td><td><button align='center' onclick="document.getElementById('id3').style.display='block'" class=" button button1">Ver</button><div id="id3" class="modal" style="display: none;"><div class="modal-content"><span onclick="document.getElementById('id3').style.display='none'" class="close">&times;</span><div><embed src="file:C:\POC_SELENIUM\baseframework-develop@9d1e8831bb6//src//test-output//Results//EvidenciaPDF//31032023_073253480.pdf#zoom=125" frameborder="0" width="100%" height="900px" internalinstanceid="10"></div></div></div></td></tr><tr><td>4</td><td>GET</td><td>PERU?ACCESS_KEY=1175FEA6BA50AD8EAC7A31857B37DEAA</td><td>404</td><td align='center' style='color:green;'>PASS</td><td><button align='center' onclick="document.getElementById('id4').style.display='block'" class=" button button1">Ver</button><div id="id4" class="modal" style="display: none;"><div class="modal-content"><span onclick="document.getElementById('id4').style.display='none'" class="close">&times;</span><div><embed src="file:C:\POC_SELENIUM\baseframework-develop@9d1e8831bb6//src//test-output//Results//EvidenciaPDF//31032023_073254796.pdf#zoom=125" frameborder="0" width="100%" height="900px" internalinstanceid="10"></div></div></div></td></tr></table><script>
+function myFunction() {
+
+  var input, filter, table, tr, td, i, txtValue , col ;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("tabla");
+  col = document.getElementById('tabla').rows[0].cells.length - 1
+  tr = table.getElementsByTagName("tr");
+  
+  for (i = 0; i < tr.length; i++) {
+  
+      for (j = 0; j < col; j++) {
+
+          td = tr[i].getElementsByTagName("td")[j];
+          if (td) {
+          txtValue = td.textContent || td.innerText;
+          
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+            break;
+          } else {
+            tr[i].style.display = "none";
+          }
+          
+        }
+ 
+    }       
+  }
+}
+</script><script src='C:\POC_SELENIUM\baseframework-develop@9d1e8831bb6//src//ResourceReport//JScript//script.js'></script><br><table style='margin-top:10px; width:30%'id='Resolucion'><tr><th colspan='2'align='center'>Resolucion de Automatizacion</th></tr><tr><td>Usuario</td><td>Usuario</td></tr><tr><td>Casos Exitosos</td><td>4</td></tr><tr><td>Casos Fallidos</td><td>0</td><tr><td>Fecha de Ejecucion</td><td>31/03/2023</td></tr><tr><td>Hora de Inicio</td><td>19:32:50</td></tr><tr><td>Hora de Fin</td><td>19:32:56</td></tr><tr><td>Tiempo de duracion</td><td>6 seg</td></tr></table><p align='center' style='color:gray;'>* POR FAVOR, INFORME INMEDIATAMENTE SI HAY ALGUNA DESVIACION EN LOS RESULTADO (S)</p></body></html>

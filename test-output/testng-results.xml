@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="42672" started-at="2019-11-26T20:04:34 IST" finished-at="2019-11-26T20:05:17 IST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:MyRunner.TestRunner@485a47]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="42672" started-at="2019-11-26T20:04:34 IST" finished-at="2019-11-26T20:05:17 IST">
+      <class name="MyRunner.TestRunner">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:MyRunner.TestRunner@485a47]" name="beforeSuite" is-config="true" duration-ms="1103" started-at="2019-11-26T20:04:33 IST" finished-at="2019-11-26T20:04:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:MyRunner.TestRunner@485a47]" name="setUpClass" is-config="true" duration-ms="212" started-at="2019-11-26T20:04:34 IST" finished-at="2019-11-26T20:04:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:MyRunner.TestRunner@485a47]" name="setup" is-config="true" duration-ms="29" started-at="2019-11-26T20:04:34 IST" finished-at="2019-11-26T20:04:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:MyRunner.TestRunner@485a47]" name="runScenario" duration-ms="41525" started-at="2019-11-26T20:04:34 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-11-26T20:05:16 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Launch and Run Pcomm"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["BCP bank Login Feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:MyRunner.TestRunner@485a47]" name="afterMethod" is-config="true" duration-ms="3" started-at="2019-11-26T20:05:16 IST" finished-at="2019-11-26T20:05:16 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=runScenario status=SUCCESS method=AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:MyRunner.TestRunner@485a47] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:MyRunner.TestRunner@485a47]" name="afterClass" is-config="true" duration-ms="1" started-at="2019-11-26T20:05:16 IST" finished-at="2019-11-26T20:05:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:MyRunner.TestRunner@485a47]" name="tearDownClass" is-config="true" duration-ms="761" started-at="2019-11-26T20:05:16 IST" finished-at="2019-11-26T20:05:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- MyRunner.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
