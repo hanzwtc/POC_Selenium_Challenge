@@ -3689,3 +3689,12 @@
 [INFO ] 2023-03-31 19:32:54.794 [main] BeforeActions - SETTING UP DRIVER>>>>
 [INFO ] 2023-03-31 19:32:54.795 [main] BeforeActions - INITIALIZING DRIVER >>>>
 [INFO ] 2023-03-31 19:32:56.087 [main] AfterActions - CLOSING BROWSER >>>>
+[INFO ] 2023-04-02 11:13:42.294 [main] BeforeActions - SETTING UP DRIVER>>>>
+[INFO ] 2023-04-02 11:14:54.900 [main] BeforeActions - INITIALIZING DRIVER >>>>
+[INFO ] 2023-04-02 11:15:37.164 [main] AfterActions - CLOSING BROWSER >>>>
+[INFO ] 2023-04-02 12:24:27.710 [main] BeforeActions - SETTING UP DRIVER>>>>
+[INFO ] 2023-04-02 12:25:02.369 [main] BeforeActions - INITIALIZING DRIVER >>>>
+[INFO ] 2023-04-02 12:25:12.446 [main] AfterActions - CLOSING BROWSER >>>>
+[INFO ] 2023-04-02 12:25:35.021 [main] BeforeActions - SETTING UP DRIVER>>>>
+[INFO ] 2023-04-02 12:26:04.789 [main] BeforeActions - INITIALIZING DRIVER >>>>
+[INFO ] 2023-04-02 12:26:46.763 [main] AfterActions - CLOSING BROWSER >>>>

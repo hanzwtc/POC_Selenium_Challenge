@@ -11,7 +11,7 @@ import cucumber.api.CucumberOptions;
 		plugin = {"json:target/cucumber.json", "html:target/cucumber-reports","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
 		features = "src/test/java/Features",
 		glue = "stepDefinitions",
-		tags = {"@SendRequestApiTest"}
+		tags = {"@Evershop_Buy_Shoes"}
 
 		)
 
