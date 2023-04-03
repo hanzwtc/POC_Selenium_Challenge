@@ -10,7 +10,7 @@ Feature: Registration and Product Buy
       And User Evidence Create Account "<UserName>","<Email>"
     Examples:
       |UserName  |Email          |Password   |
-      |Hans      |Hans11@Test.com|Richi123!  |
+      |Hans      |Hans12@Test.com|Richi123!  |
 
   @Evershop_Buy_Shoes
   Scenario Outline: User buys different products
@@ -32,4 +32,4 @@ Feature: Registration and Product Buy
 
     Examples:                                 #ShoesModel-Qty-Size-Colour
       |UserName  |Email          |Password   |ProductsDetail_Men           |ProductsDetail_Kids             |ProductsDetail_Women     |
-      |Hans      |Hans11@Test.com|Richi123!  |Nike varsity-2-M-White       |Nike court vision low-2-X-Black |Strutter shoes-5-XL-Grey |
+      |Hans      |Hans6@Test.com|Richi123!  |Nike varsity-2-M-White       |Nike court vision low-2-X-Black |Strutter shoes-5-XL-Grey |
